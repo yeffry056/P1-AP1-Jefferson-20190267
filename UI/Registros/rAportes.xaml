@@ -1,0 +1,45 @@
+﻿<Window x:Class="P1_AP1_Jefferson_20190267.UI.Registros.rAportes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P1_AP1_Jefferson_20190267.UI.Registros"
+        mc:Ignorable="d"
+        Title="Registro de Aportes" Height="392" Width="326" Icon="/Resources/icono.icon.png">
+    <Grid>
+        <Label Content="Aporte Id:" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextAporteID" HorizontalAlignment="Left" Margin="10,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Text="{Binding AporteId}"/>
+        <Label Content="Persona:" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextNombre" HorizontalAlignment="Left" Margin="10,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Text="{Binding Nombre}"/>
+        <Label Content="Concepto" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextConcepto" HorizontalAlignment="Left" Margin="10,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Text="{Binding Concepto}"/>
+        <DatePicker HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Width="93" SelectedDate="{Binding Fecha}"/>
+        <Label Content="Fecha:" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top"/>
+        <Button HorizontalAlignment="Left" Margin="78,53,0,0" VerticalAlignment="Top" Height="18" Click="BtnBuscar">
+            <StackPanel >
+                <Image Source="/Resources/buscar.png" Stretch="Uniform" Height="15" Width="21" />
+            </StackPanel>
+        </Button>
+        <Label Content="Monto" HorizontalAlignment="Left" Margin="10,229,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextMonto" HorizontalAlignment="Left" Margin="10,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="93" Text="{Binding Monto}"/>
+        <Button HorizontalAlignment="Left" Margin="32,291,0,0" VerticalAlignment="Top" Height="34" Width="56" Click="BtnNuevo">
+            <StackPanel Orientation="Vertical">
+                <Image Source="/Resources/nuevo.png" Height="15" Width="18" />
+                <Label Content="Nuevo" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,-5,0,0"/>
+            </StackPanel>
+        </Button>
+        <Button  HorizontalAlignment="Left" Margin="110,291,0,0" VerticalAlignment="Top" Height="34" Width="56" Click="BtnGuardar">
+            <StackPanel Orientation="Vertical">
+                <Image Source="/Resources/Guardar.png" Height="18" Width="15" />
+                <Label Content="Guardar" Margin="0,-8,0,0" />
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="188,291,0,0" VerticalAlignment="Top" Height="34" Width="56" Click="BtnEliminar">
+            <StackPanel Orientation="Vertical">
+                <Image Source="/Resources/Eliminar.png" Width="15" Height="18" />
+                <Label Content="Eliminar" Margin="0,-9,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>

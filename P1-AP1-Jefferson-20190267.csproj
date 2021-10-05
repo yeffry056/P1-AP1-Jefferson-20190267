@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+	  <StartWorkingDirectory>$(MSBuildProjectDirectory)</StartWorkingDirectory>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>P1_AP1_Jefferson_20190267</RootNamespace>
@@ -42,7 +43,6 @@
     <Folder Include="DATA\" />
     <Folder Include="UI\Consultas\" />
     <Folder Include="UI\Reportes\" />
-    <Folder Include="UI\Registros\" />
   </ItemGroup>
 
   <ItemGroup>

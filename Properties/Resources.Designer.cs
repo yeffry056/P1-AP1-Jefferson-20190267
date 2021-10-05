@@ -83,6 +83,16 @@ namespace P1_AP1_Jefferson_20190267.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] Fondo {
+            get {
+                object obj = ResourceManager.GetObject("Fondo", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] Guardar {
             get {
                 object obj = ResourceManager.GetObject("Guardar", resourceCulture);
