@@ -24,5 +24,15 @@ namespace P1_AP1_Jefferson_20190267
         {
             InitializeComponent();
         }
+
+        private void RegistroAportes(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ConsultaAportes(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

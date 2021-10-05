@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P1_AP1_Jefferson_20190267"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Registros" Height="450" Width="800" Icon="/Resources/registro (1).png">
     <Grid>
-
+        <StackPanel Orientation="Vertical">
+            <Menu Height="20" Width="800" VerticalAlignment="Top">
+                <MenuItem Header="Registros">
+                    <MenuItem Header="Registro de aportes" Click="RegistroAportes"/>
+                </MenuItem>
+                <MenuItem Header="Consultas">
+                    <MenuItem Header="Consulta de aportes" Click="ConsultaAportes"/>
+                </MenuItem>
+                
+            </Menu>
+            <Image Source="/Resources/Fondo.jpg" Stretch="Uniform" />
+        </StackPanel>
     </Grid>
 </Window>
