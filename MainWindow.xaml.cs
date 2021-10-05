@@ -1,4 +1,5 @@
-﻿using P1_AP1_Jefferson_20190267.UI.Registros;
+﻿using P1_AP1_Jefferson_20190267.UI.Consultas;
+using P1_AP1_Jefferson_20190267.UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,7 +35,8 @@ namespace P1_AP1_Jefferson_20190267
 
         private void ConsultaAportes(object sender, RoutedEventArgs e)
         {
-
+            cAportes aporte = new cAportes();
+            aporte.Show();
         }
     }
 }

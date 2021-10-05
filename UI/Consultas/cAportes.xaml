@@ -1,0 +1,60 @@
+﻿<Window x:Class="P1_AP1_Jefferson_20190267.UI.Consultas.cAportes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P1_AP1_Jefferson_20190267.UI.Consultas"
+        mc:Ignorable="d"
+        Title="Consulta de Aportes" Height="435" Width="403" Icon="/Resources/icono.icon.png">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10,5,10,0" >
+            <StackPanel Orientation="Horizontal" Height="60">
+
+                <StackPanel Orientation="Vertical"  >
+                    <Label Content="Desde" />
+                    <DatePicker x:Name="DatePickerDesde"  />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="15,0,0,0" >
+                    <Label Content="Hasta" />
+                    <DatePicker x:Name="DataPickerHasta" />
+                </StackPanel>
+
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="60">
+                <StackPanel Orientation="Vertical" >
+                    <Label Content="Campo a filtrar"/>
+                    <ComboBox x:Name="FiltroComboBox" >
+                        <ComboBoxItem Content="Persona"/>
+                        <ComboBoxItem Content="Concepto"/>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel  Height="20"  Margin="70,13,0,0">
+                    <TextBox x:Name="TextCriterio" Width="147"/>
+
+                </StackPanel>
+                <Button Margin="15,5,0,0" Height="35" Width="48" Click="BtnBuscar">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="/Resources/buscar.png" Height="18" Width="28" />
+                        <Label Content="Buscar" Margin="0,-7,0,0"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left">
+                <DataGrid x:Name="DatosDataGrid" Height="225" Width="369">
+
+                </DataGrid>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <Label Content="Conteo"/>
+                <TextBox x:Name="TextConteo" Width="80" />
+
+                <Label Content="Total" Margin="100,0,0,0"/>
+                <TextBox x:Name="TextTotal" Width="105"  />
+
+
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>
